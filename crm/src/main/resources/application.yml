@@ -1,0 +1,18 @@
+server:
+    port: 80
+#===============================datasource========================================
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        username: root
+        password: 199710
+        url: jdbc:mysql://localhost:13306/edu_crm?serverTimezone=GMT%2B8&useSSL=false
+#thymeleaf
+    thymeleaf:
+        cache: false
+    mybatis:
+        type-aliases-package: top.juntech.crm.bean
+        mapper-locations: classpath*:/mybatis/mapper/*Mapper.xml
+logging:
+  level:
+    top.juntech.crm.mapper: debug
